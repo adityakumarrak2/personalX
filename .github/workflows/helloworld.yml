@@ -1,27 +1,24 @@
+---
 name: Hello Wolrd workflow
-
 on:
   push:
     branches:
-      - main:
+      - main: null
   pull_request:
     branches:
-      - main:
-  workflow_dispatch:
-  
- jobs:
-   hello:
-     runs-on: ubuntu-latest
-     steps:
-       - uses: actions/checkout@v2
-       - name: hello world
-         run: echo "Hello Wolrd"
-         shell: bash
-         
-   goodbye:
-      runs-on: ubuntu-latest
-       steps:
-       - name: goodbye world
-         run: echo "Goodbye Wolrd"
-         shell: bash
-       
+      - main: null
+  workflow_dispatch: null
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo "Hello Wolrd"
+        shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye world
+        run: echo "Goodbye Wolrd"
+        shell: bash
