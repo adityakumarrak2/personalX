@@ -3,12 +3,8 @@ name: Hello Wolrd workflow
 
 on:
   push:
-    branches:
-      - main: null
   pull_request:
-    branches:
-      - main: null
-  workflow_dispatch: null
+  workflow_dispatch:
 
 jobs:
   hello:
