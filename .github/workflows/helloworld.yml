@@ -1,5 +1,6 @@
 ---
 name: Hello Wolrd workflow
+
 on:
   push:
     branches:
@@ -8,6 +9,7 @@ on:
     branches:
       - main: null
   workflow_dispatch: null
+
 jobs:
   hello:
     runs-on: ubuntu-latest
